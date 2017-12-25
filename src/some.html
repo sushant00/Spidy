@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<title>Spidy: The wall climbing robot</title>
+
+
+<script type="text/javascript" src="/webiopi.js"></script>
+<script type="text/javascript">
+	function init() {
+	}
+	function Stop() {
+	webiopi().callMacro("Stop");
+	}
+	function Forward() {
+	webiopi().callMacro("Forward");
+	}
+	function Reverse() {
+	webiopi().callMacro("Reverse");
+	}
+	function LeftTurn() {
+	webiopi().callMacro("LeftTurn");
+	}
+	function RightTurn() {
+	webiopi().callMacro("RightTurn");
+	}
+
+	function OneSpeed() {
+	webiopi().callMacro("OneSpeed");
+	}
+	function TwoSpeed() {
+	webiopi().callMacro("TwoSpeed");
+	}
+	function ThreeSpeed() {
+	webiopi().callMacro("ThreeSpeed");
+	}
+	function StopBLDC() {
+	webiopi().callMacro("StopBLDC");
+	}	
+	webiopi().ready(init);
+</script>
+
+
+<style>
+
+
+
+a {
+ opacity:0.70;
+}
+
+a:hover {
+ opacity:1;
+}
+
+</style>
+
+</head>
+<body>
+<table style ="float:left">
+  <tr>
+    <td></td>
+    <td><a href="#"><img src="spidy/up_green.jpg" alt="forward" onmousedown="Forward()" height = "100" width ="100"></a></td> 
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="#"><img src="spidy/left_green.jpg" alt="left" onmousedown="LeftTurn()" height = "100" width ="100"></a></td>
+    <td><a href="#"><img src="spidy/stop.jpg" alt="stop" onmousedown="Stop()" height = "100" width ="100"></a></td> 
+    <td><a href="#"><img src="spidy/right_green.jpg" alt="right" onmousedown="RightTurn()" height = "100" width ="100"></a></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>  <a href="#"><img src="spidy/down_green.jpg" alt="reverse" onmousedown="Reverse()" height = "100" width ="100"></a></td> 
+    <td></td>
+  </tr>
+</table>
+<iframe src="http://192.168.43.171:8080/javascript_simple.html" height = 500 width = 650 align = right style = "outline: none; float: right"></iframe>
+
+</body>
+</html>
